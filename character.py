@@ -18,7 +18,19 @@ class Character():  # classes start with uppercase and usually singular
 # `someone = None` is default argument
 # `None` is equivalent to `null` in other languages
     def greet(self, someone=None):
-        if someone is not None: # or `if someone`
+        # When we assume that `someone` argument has a `.name` property
+        # this is a Object-Oriented Programmming principle called
+        # polymorphism.
+        # In Python, it's called "Duck Typing"
+        if someone is not None:  # or `if someone`
             return "Hello, %s, I am %s. I am awesome" % (someone.name, self.name)
         else:
             return "Hello, I am %s. I am awesome" % self.name
+
+
+# Hero is a kind of Character
+# Hero is a subclass of Character
+# Hero inherits from Character
+# Character is the superclass of Hero
+class Hero(Character):
+    pass

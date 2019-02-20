@@ -1,7 +1,7 @@
 # sssssssh. these aren't "real" tests
 
 from character import Character
-
+from character import Hero
 # Characters can be instantiated with name and avatar
 
 arya = Character("Arya Stark", "arya.png")
@@ -31,3 +31,6 @@ print("there are %d items in %s's inventory" %
 
 print(arya.greet(jon))
 print(arya.greet())
+
+# I should be able to create a Hero instance
+bronn = Hero("Bronn of Blackwater", "bron.jng")
