@@ -24,4 +24,10 @@ print("there are %d items in %s's inventory" %
 # arya should have a `greet` method
 # and when I call it with arya.greet(jon), it should return
 # "Hello, Jon Snow, I am Arya Stark. I am awesome"
+
+# arya should have a `greet` method
+# and when I call it with arya.greet(), it should return
+# "Hello, I am Arya Stark. I am awesome"
+
 print(arya.greet(jon))
+print(arya.greet())
