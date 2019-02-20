@@ -13,3 +13,4 @@ class Character():  # classes start with uppercase and usually singular
         # In some other languages, they use `this`
         self.name = new_name
         self.avatar = new_avatar
+        self.inventory = []

@@ -7,5 +7,16 @@ from character import Character
 arya = Character("Arya Stark", "arya.png")
 jon = Character("Jon Snow", "jon.png")
 
+
 print(arya.name, arya.avatar)
 print(jon.name, jon.avatar)
+
+
+# after adding 2 items to inventory
+# length of inventory should == 2
+
+arya.inventory.append('sword')
+arya.inventory.append('mask')
+
+print("there are %d items in %s's inventory" %
+      (len(arya.inventory), arya.name))
